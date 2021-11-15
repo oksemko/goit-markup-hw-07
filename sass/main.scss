@@ -9,6 +9,20 @@
 
 // COMPONENTS
 @import './components/container';
+@import './components/section';
+@import './components/section-title';
+@import './components/modal-btn';
+@import './components/social-link';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/modal-form';
 
 // LAYOUT
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/activity';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/footer';
+@import './layout/portfolio';
