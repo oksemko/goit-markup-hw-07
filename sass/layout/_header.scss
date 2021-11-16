@@ -128,8 +128,10 @@
     display: flex;
 }
 
-.header__item:not(:last-child) {
+.header__item {
+    &:not(:last-child) {
     margin-right: 50px;
+    }
 }
 
 .header__contacts {
@@ -138,8 +140,10 @@
     align-items: center;
 }
 
-.header__contacts__list:not(:last-child) {
+.header__contacts__list {
+    &:not(:last-child) {
     margin-right: 50px;
+    }
 }
 
 .header__icon {

@@ -34,8 +34,10 @@
     justify-content: center;
 }
 
-.filter-item:not(:last-child) {
+.filter-item {
+    &:not(:last-child) {
     margin-right: 8px;
+    }
 }
 
 /*-----Portfolio gallery-----*/

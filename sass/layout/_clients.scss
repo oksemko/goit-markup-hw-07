@@ -11,8 +11,10 @@
     height: 92px;
 }
 
-.clients-item:not(:last-child) {
+.clients-item {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .clients-icon {

@@ -17,8 +17,10 @@
     display: flex;
 }
 
-.activity-item:not(:last-child) {
+.activity-item {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .activity-list-description {

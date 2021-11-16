@@ -26,8 +26,10 @@
     margin-right: 10px;
 }
 
-.social-item:last-child {
+.social-item {
+    &:last-child {
     margin-right: 0;
+    }
 }
 
 .social-list {
@@ -89,8 +91,10 @@
     margin-right: 30px;
 }
 
-.team-item:nth-child(4n) {
+.team-item {
+    &:nth-child(4n) {
     margin-right: 0;
+    }
 }
 
 .team-item-description {

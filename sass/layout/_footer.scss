@@ -124,8 +124,10 @@
     height: 44px;
 }
 
-.accession-social-item:not(:last-child) {
+.accession-social-item {
+    &:not(:last-child) {
     margin-right: 10px;
+    }
 }
 
 .accession-social-icon {

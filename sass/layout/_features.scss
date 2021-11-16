@@ -26,8 +26,10 @@
     display: flex;
 }
 
-.features-item:not(:last-child) {
+.features-item {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .features-title {
@@ -53,8 +55,10 @@
     margin-bottom: 30px;
 }
 
-.gallery-item:not(:last-child) {
+.gallery-item {
+    &:not(:last-child) {
     margin-right: 30px;
+    }
 }
 
 .gallery-link {
