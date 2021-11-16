@@ -36,12 +36,11 @@
     border-radius: 4px;
     padding-left: 42px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-
-.modal-form-input:focus {
+    &:focus {
     outline: none;
     border-color: var(--accent-color);
+    }
 }
 
 
@@ -54,11 +53,12 @@
     left: 12px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .modal-form-input:focus + & {
+        fill: var(--accent-color);
+    }
 }
 
-.modal-form-input:focus+.modal-form-icon {
-    fill: var(--accent-color);
-}
 
 .modal-form-message {
     display: block;
@@ -71,19 +71,19 @@
     margin-top: 10px;
     padding: 12px 16px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.modal-form-message:focus {
+    &:focus {
     outline: none;
     border-color: var(--accent-color);
-}
+    }
 
-.modal-form-message::placeholder {
+    &:placeholder {
     font-size: 14px;
     line-height: 1.14;
     font-weight: 400;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    }
 }
 
 
@@ -97,10 +97,8 @@
     color: #757575;
     margin-bottom: 30px;
     text-decoration: none;
-}
 
-
-.modal-form-checkbox-label::before {
+    &::before {
     display: block;
     content: '';
     width: 16px;
@@ -111,8 +109,7 @@
     cursor: pointer;
     margin-right: 7px;
 }
-
-.modal-form-checkbox:checked+.modal-form-checkbox-label::before {
+    .modal-form-checkbox:checked + &::before {
     background-color: var(--accent-color);
     background-image: url(../images/iconcheck.svg);
     background-size: contain;
@@ -120,11 +117,13 @@
     background-repeat: no-repeat;
     background-position: center;
     border-color: var(--accent-color);
+    }
+
+    .modal-form-checkbox:focus + &::before {
+    outline: var(--accent-color);
+    }
 }
 
-.modal-form-checkbox:focus+.modal-form-checkbox-label::before {
-    outline: var(--accent-color);
-}
 
 .accept-policy-link {
     font-size: 14px;
@@ -157,10 +156,12 @@
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
 }
 
-.modal-form-button:hover,
-.modal-form-button:focus {
-    background-color: #188ce8;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+
