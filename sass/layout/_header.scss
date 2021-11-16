@@ -13,12 +13,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header__web:hover,
-.header__web:focus {
-    color: var(--accent-color);
-}
 
 .header__studio {
     font-family: "Raleway", sans-serif;
@@ -31,12 +32,13 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header__studio:hover,
-.header__studio:focus {
-    color: var(--accent-color);
-}
 
 /*-----flex-----*/
 
@@ -61,12 +63,13 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header__link:hover,
-.header__link:focus {
-    color: var(--accent-color);
-}
 
 .current {
     color: var(--accent-color);
@@ -93,17 +96,13 @@
     align-items: center;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
 }
 
-.header__svg__link:hover,
-.header__svg__link:focus {
-    color: var(--accent-color);
-}
-
-.header__svg__link:hover .header__icon,
-.header__svg__link:focus .header__icon {
-    fill: var(--accent-color);
-}
 
 /*-----flex-----*/
 
@@ -148,4 +147,9 @@
     margin-right: 10px;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .header__svg__link:hover &,
+    .header__svg__link:focus & {
+        fill: var(--accent-color);
+    }
 }
